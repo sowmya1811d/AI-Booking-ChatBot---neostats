@@ -75,7 +75,9 @@ medai project/
 │   └── secrets.toml    # Secrets (not pushed to GitHub)
 │
 ├── docs/               # Sample PDFs
-└── __pycache__/        # Python cache
+└── __pycache__/        # Python 
+---
+
 ▶️ How to Run Locally
 
 1. Install dependencies:
