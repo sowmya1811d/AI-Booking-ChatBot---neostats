@@ -76,8 +76,7 @@ medai project/
 │
 ├── docs/               # Sample PDFs
 └── __pycache__/        # Python 
-```markdown
----
+
 
 ## ▶️ How to Run Locally
 
