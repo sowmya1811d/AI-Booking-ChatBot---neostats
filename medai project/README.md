@@ -76,9 +76,10 @@ medai project/
 │
 ├── docs/               # Sample PDFs
 └── __pycache__/        # Python 
+```markdown
 ---
 
-▶️ How to Run Locally
+## ▶️ How to Run Locally
 
 1. Install dependencies:
 
@@ -94,7 +95,7 @@ PASSWORD = "your_app_password"
 
 streamlit run app.py
 
-🌐 Deployment
+## 🌐 Deployment
 
 Push the project to GitHub
 
@@ -104,7 +105,7 @@ Select repository and deploy
 
 Add secrets in Streamlit Cloud settings
 
-🔮 Future Improvements (Healthcare-Focused)
+## 🔮 Future Improvements (Healthcare-Focused)
 🧠 Clinical Intelligence
 
 Symptom-based intelligent triage
@@ -151,7 +152,7 @@ Automatic appointment summaries
 
 Doctor-side AI insights dashboard
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Dasari Manasa Sowmya
 Final-year B.Tech student (AI & ML)
