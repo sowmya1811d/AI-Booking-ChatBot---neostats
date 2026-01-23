@@ -2,7 +2,7 @@ import streamlit as st
 from groq import Groq
 from pypdf import PdfReader
 import re
-
+import os
 from db import init_db, save_booking, init_extended_schema
 from booking import is_booking_intent, FIELDS, validate
 from admin import admin_panel
@@ -34,7 +34,12 @@ st.markdown("""
 
 st.title("🩺 DocAI – Health Assistant")
 
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+api_key = st.secrets.get("GROQ_API_KEY") or os.getenv("GROQ_API_KEY")
+client = Groq(api_key=api_key)
+
+st.write("Groq key loaded:", bool(api_key))
+
+
 
 # ---------------- Session State ----------------
 if "messages" not in st.session_state:
@@ -128,7 +133,7 @@ Question: {question}
 Answer:
 """
     response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+       model="llama3-8b-8192",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
         max_tokens=400
