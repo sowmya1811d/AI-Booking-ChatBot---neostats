@@ -37,7 +37,7 @@ st.title("🩺 DocAI – Health Assistant")
 api_key = st.secrets.get("GROQ_API_KEY") or os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
 
-st.write("Groq key loaded:", bool(api_key))
+
 
 
 
