@@ -1,5 +1,0 @@
-streamlit
-groq
-pypdf
-requests
-pandas
