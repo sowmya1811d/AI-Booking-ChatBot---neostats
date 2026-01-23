@@ -52,8 +52,8 @@ DocAI is a Streamlit-based AI health assistant that allows users to chat with an
 
 ## 📂 Project Structure
 
-```text
-medai project/
+```
+medai/
 │
 ├── app.py              # Main Streamlit application
 ├── db.py               # Database logic
@@ -75,9 +75,10 @@ medai project/
 │   └── secrets.toml    # Secrets (not pushed to GitHub)
 │
 ├── docs/               # Sample PDFs
-└── __pycache__/        # Python 
+└── __pycache__/        # Python cache files
 
-
+---
+```
 ## ▶️ How to Run Locally
 
 1. Install dependencies:
